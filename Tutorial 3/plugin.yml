@@ -2,6 +2,6 @@ name: AntiBlock
 main: me.firstflames.AntiBlock
 version: 1.0
 commands: 
-   givemeitems
-     description:lol
-     usage:/<command>
+  givemeitems:
+    description: Du bekommst eine superscharfe Axt
+    usage: /<command>

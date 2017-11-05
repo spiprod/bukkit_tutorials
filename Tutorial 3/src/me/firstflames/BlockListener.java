@@ -14,7 +14,7 @@ public class BlockListener implements Listener {
 	public void onBlockPlace(BlockPlaceEvent e) {
 		Player player = e.getPlayer();
 
-		if (player.hasPermission("playerAbilities.allowed")) {
+		if (!player.hasPermission("playerAbilities.allowed")) {
 			e.setCancelled(true);
 		}
 	}
