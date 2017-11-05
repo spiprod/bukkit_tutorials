@@ -1,0 +1,7 @@
+name: AntiBlock
+main: me.firstflames.AntiBlock
+version: 1.0
+commands: 
+   givemeitems
+     description:lol
+     usage:/<command>
