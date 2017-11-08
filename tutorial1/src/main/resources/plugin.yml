@@ -1,0 +1,7 @@
+name: GreetingsPlugin
+main: tutorial1.GreetingsPlugin
+version: 1.0
+commands:
+  hello:
+    description: It replies with a greeting to the player
+    usage: /<command>

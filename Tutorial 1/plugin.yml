@@ -1,7 +1,0 @@
-name: MyFirstPlugin
-main: me.firstflames.MyFirstPlugin
-version: 1.0
-commands:
-  hello:
-    description: It replies with a greeting to the player
-    usage: /<command>

@@ -1,0 +1,4 @@
+name: AntiBlockPlugin
+main: tutorial4.AntiBlockPlugin
+version: 1.0
+commands: 

@@ -1,0 +1,7 @@
+name: AntiBlockPlugin
+main: tutorial3.AntiBlockPlugin
+version: 1.0
+commands: 
+  givemeitems:
+    description: Du bekommst eine superscharfe Axt
+    usage: /<command>

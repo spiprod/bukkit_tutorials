@@ -1,0 +1,38 @@
+subprojects {
+	apply plugin: 'java-library'
+	apply plugin: 'eclipse'
+
+	def BUKKIT_VERSION = '1.12.2-R0.1-SNAPSHOT'
+
+	repositories {
+    		mavenCentral()
+    		mavenLocal() 
+    		maven {
+        		url 'https://hub.spigotmc.org/nexus/content/groups/public/'
+    		}
+	}
+
+	dependencies {
+        	//Bukkit API and libraries
+    		compile group: 'org.bukkit', name: 'bukkit', version: BUKKIT_VERSION
+    		//compile group: 'org.bukkit', name: 'spigot-api', version: BUKKIT_VERSION
+    		//other libraries here
+
+    		//Craftbukkit server
+    		//runtime files('location/of/your/jar/file.jar')//for custom jar
+    		runtime group: 'org.bukkit', name: 'craftbukkit', version: BUKKIT_VERSION
+    		//runtime group: 'org.bukkit', name: 'spigot', version:  BUKKIT_VERSION
+	}
+	
+}
+
+project(':tutorial1') {
+}
+project(':tutorial2') {
+}
+project(':tutorial3') {
+}
+project(':tutorial4') {
+}
+
+

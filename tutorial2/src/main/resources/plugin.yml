@@ -1,0 +1,4 @@
+name: EventPlugin
+main: tutorial2.EventPlugin
+version: 1.0
+commands: 
