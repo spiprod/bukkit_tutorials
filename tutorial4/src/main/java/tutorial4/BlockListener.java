@@ -23,9 +23,9 @@ public class BlockListener implements Listener {
 		if (e.getBlock().getType() == Material.BEDROCK) {
 			if (!player.hasPermission(PLAYER_ABILITIES_ALLOWED)) {
 				e.setCancelled(true);
-				player.sendMessage(ChatColor.RED + "You cannot place " + e.getBlock().getType().toString() + "down!");
+				player.sendMessage(ChatColor.RED + "You cannot place " + e.getBlock().getType().toString() + " down!");
 			} else {
-				player.sendMessage(ChatColor.GREEN + "You can place " + e.getBlock().getType().toString() + "down!");
+				player.sendMessage(ChatColor.GREEN + "You can place " + e.getBlock().getType().toString() + " down!");
 			}
 		}
 		
@@ -34,10 +34,10 @@ public class BlockListener implements Listener {
 			Location location = e.getBlock().getLocation();
 			
 			if (new Location(location.getWorld(), location.getX(), location.getY() - 1, location.getZ()).getBlock().getType() == Material.GRASS) { 
-				player.sendMessage(ChatColor.GREEN + "You can place " + e.getBlock().getType().toString() + "down!");	
+				player.sendMessage(ChatColor.GREEN + "You can place " + e.getBlock().getType().toString() + " down!");	
 			}else {
 				e.setCancelled(true);
-				player.sendMessage(ChatColor.RED + "You cannot place " + e.getBlock().getType().toString() + "down!");
+				player.sendMessage(ChatColor.RED + "You cannot place " + e.getBlock().getType().toString() + " down!");
 			}
 			
 		}

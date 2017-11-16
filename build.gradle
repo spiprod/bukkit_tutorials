@@ -22,6 +22,12 @@ subprojects {
     		runtime group: 'org.bukkit', name: 'craftbukkit', version: BUKKIT_VERSION
     		//runtime group: 'org.bukkit', name: 'spigot', version:  BUKKIT_VERSION
 	}	
+	task copyJarToBin {
+    	copy {
+        	from "build/libs/${project.name}.jar"
+        	into "C:/Users/Noah/Desktop/Workspace/Plugin/NEW Bukkit 1.8/bin/plugins"
+    	}
+	}
 }
 
 project(':tutorial1') {
